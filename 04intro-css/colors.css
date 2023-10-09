@@ -1,0 +1,109 @@
+body{
+    font-family: 'Mukta', sans-serif;
+    background-color: #f5eae4;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    color: #192309
+}
+/*--this is the header section--*/  
+header {
+    background-color: #ccbdb6;
+    margin: 1rem 2vw;
+    font-weight: 700
+}
+header h1{
+    margin: 0;
+
+}
+header p{
+    margin: 0;
+    letter-spacing: .5px;
+}
+/*--this is the navigation section--*/
+nav{
+    background-color: #3eb2e1;
+    
+}
+nav ul{
+    list-style: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+    
+}
+nav a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #e0b434;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+    
+}
+nav li.active a{
+    background-color: #e0b434;
+    color: #3eb2e1;
+}
+nav a:hover{
+    color: #f5eae4;
+}
+/*--this is the main section--*/
+main{
+    margin: 1rem 2vw;
+    
+}
+main h1{
+    color: #e06d4a;
+    font-weight: 700
+}
+main h2{
+    margin-bottom: .2em;
+
+}
+main p{
+    margin: 0 .3rem 0 0;
+    
+}
+main ul{
+    list-style: square;
+    padding: 1rem;
+    font-weight: 400;
+    
+    
+}
+main ul.types{
+    border-style: groove;
+    border-color: #3eb2e1;
+
+}
+main a{
+    color: #e06d4a;
+    text-decoration: none;
+}
+main ol{
+    list-style: lower-roman;
+}
+main dl{
+    padding: .5rem 1 0 0;
+    font-size: .9rem;
+}
+main dt{
+    font-size: 1.1rem;
+    color: #3eb2e1;
+}
+main dd{}
+/*--this is the footer section--*/
+footer p.legal{
+    font-size: .7rem;
+    font-style: italic;
+}
+footer{
+    background-color: #ccbdb6;
+    color: #7a6F6c;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: #e06d4a;
+}
