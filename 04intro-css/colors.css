@@ -62,7 +62,7 @@ main h2{
 
 }
 main p{
-    margin: 0 .3rem 0 0;
+    margin: 0vw .3rem 0vw 0vw;
     
 }
 main ul{
@@ -85,7 +85,7 @@ main ol{
     list-style: lower-roman;
 }
 main dl{
-    padding: .5rem 1 0 0;
+    padding: .5rem 1rem 0vw 0vw;
     font-size: .9rem;
 }
 main dt{
