@@ -1,0 +1,249 @@
+* {box-sizing: border-box;}
+
+body{
+    font-family: 'Mukta', sans-serif;
+    background-color: #f5eae4;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    color: #192309
+}
+/*--this is the header section--*/  
+header {
+    background-color: #ccbdb6;
+    font-weight: 700
+}
+header {
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+header div{
+    padding-left: 1.5vw;
+}
+header h1{
+    margin: 0;
+
+}
+header p{
+    margin: 0;
+    letter-spacing: .5px;
+}
+/*--this is the navigation section--*/
+/*small screens*/
+@media only screen and (max-width: 800px){
+    nav ul{
+        margin: 0;
+        padding: 0 2vw;
+        list-style: none;
+        
+    }
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #3eb2e1;
+        color: #3eb2e1;
+    }
+    nav .active a{
+        background-color: #3eb2e1;
+        background-image: linear-gradient( #3eb2e1, #2d7694);
+        color:#e0b434;
+        
+    }
+    
+} /*end of media query*/
+
+/*wide screens*/
+@media only screen and (min-width: 801px){
+   nav{
+    background-color: #3eb2e1;
+    
+}
+nav ul{
+    list-style: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+    
+}
+nav a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #e0b434;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+    
+}
+nav li.active a{
+    background-color: #e0b434;
+    color: #3eb2e1;
+}
+nav a:hover{
+    color: #f5eae4;
+}
+} /*end of media query*/
+/*--this is the main section--*/
+main{
+    margin: 1rem 2vw;
+    
+}
+.hero{
+    width: 100%;
+    margin: 0;
+    
+}
+.hero img{
+   margin-top: 1vw;
+    width: 100%;
+    height: auto;
+}
+
+main h1{
+    color: #e06d4a;
+    font-weight: 700
+}
+main h2{
+    margin-bottom: .2em;
+
+}
+main p{
+    margin: 0vw .3rem 0vw 0vw;
+    
+}
+main ul{
+    list-style: square;
+    padding: 1rem;
+    font-weight: 400;
+    
+    
+}
+main ul.types{
+    border-style: groove;
+    border-color: #3eb2e1;
+
+}
+main a{
+    color: #e06d4a;
+    text-decoration: none;
+}
+main ol{
+    list-style: lower-roman;
+}
+main dl{
+    padding: .5rem 1rem 0vw 0vw;
+    font-size: .9rem;
+}
+main dt{
+    font-size: 1.1rem;
+    color: #3eb2e1;
+}
+main dd{
+    font-size: .9rem
+}
+address{
+    font-style: normal;
+    background-color: #e0b434;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 2px solid #3eb2e1;
+    border-radius: .5rem;
+}
+address a{
+    color: #3eb2e1;
+}
+/*--image formattingsection--*/
+figure.wrapped{
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+    
+}
+figure.wrapped img{
+    width: 100%;
+    height: auto;
+}
+figure.wrapped figcaption{
+    text-align: center;
+    font-size: .75rem;
+}
+div.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+div.gallery figure{
+    margin: .5rem 2% 0 0;
+    
+}
+div.gallery figcaption{
+    text-align: center;
+    font-size: .75rem;
+    color: #e06d4a;
+    
+}
+div.gallery img:hover{
+    box-shadow: 10px 10px 10px black; 
+}
+/*--this is the form section--*/
+.myform fieldset{
+    border: 1px solid #3eb2e1;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    
+}
+.myform legend{
+    color: #3eb2e1;
+    font-size: .8rem;
+}
+.myform label{
+    margin: .5rem;
+}
+.myform label, .myform select, .myform [type="text"],.myform [type="tel"],.myform [type="email"], .myform textarea {
+    display: block;
+}
+.myform select, .myform [type="text"],.myform [type="tel"], .myform [type="email"], .myform textarea {
+    border: 1px solid #888;
+    padding: .3rem;
+    width: 250px;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;   
+}
+.myform textarea {
+    height: 6rem;
+    margin-left: 1vw;
+}
+.myform :required{
+    background-color: rgba(156,51,53,0.2)
+}
+.myform [type="submit"]{
+    background-color: #3eb2e1;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+    
+}
+
+/*--this is the footer section--*/
+footer p.legal{
+    font-size: .7rem;
+    font-style: italic;
+}
+footer{
+    background-color: #ccbdb6;
+    color: #7a6F6c;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: #e06d4a;
+}
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
